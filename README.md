@@ -35,8 +35,8 @@ This microservice is built using Phoenix and provides a RESTful API for managing
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
-cd inventory_order_service
+git clone https://github.com/Solobarine/lorcan_bet_async
+cd lorcan_bet_async
 ```
 
 ### 2. Install Dependencies
