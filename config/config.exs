@@ -11,6 +11,12 @@ config :lorcan_bet_async,
   ecto_repos: [LorcanBetAsync.Repo],
   generators: [timestamp_type: :utc_datetime]
 
+# Configure Oban
+config :lorcan_bet_async, Oban,
+  engine: Oban.Engines.Basic,
+  queues: [default: 10],
+  repo: LorcanBetAsync.Repo
+
 # Configures the endpoint
 config :lorcan_bet_async, LorcanBetAsyncWeb.Endpoint,
   url: [host: "localhost"],

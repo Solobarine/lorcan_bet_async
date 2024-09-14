@@ -17,7 +17,8 @@ defmodule LorcanBetAsync.Application do
       # Start a worker by calling: LorcanBetAsync.Worker.start_link(arg)
       # {LorcanBetAsync.Worker, arg},
       # Start to serve requests, typically the last entry
-      LorcanBetAsyncWeb.Endpoint
+      LorcanBetAsyncWeb.Endpoint,
+      {Oban, Application.fetch_env!(:lorcan_bet_async, Oban)}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
